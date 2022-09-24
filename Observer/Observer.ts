@@ -38,10 +38,10 @@ observable.publish();
 
 unsubscribe1();
 
-console.log("Second publish");
+console.log("\nSecond publish");
 observable.publish();
 
 unsubscribe2();
 
-console.log("Third publish");
+console.log("\nThird publish");
 observable.publish();
