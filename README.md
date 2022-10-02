@@ -13,6 +13,7 @@
 
 - [Strategy](#strategy)
 - [Observable](#observable)
+- [Decorator](#decorator)
 
 # Strategy
 
@@ -25,3 +26,10 @@
   pull방식의 경우는 observable 객체가 observer에게 메세지를 보내면 observer 객체들은 알아서 필요한 데이터를 가져오게 만들 수 있습니다.
 
 - observer 패턴에서 observer가 변경될때 observerable은 건들지 않고 코드를 변경할 수 있다는 장점이 있습니다. observable의 상태는 그대로 놔둬도 된다는 의미이죠.
+
+# Decorator
+
+- 상속으로 확장을 할 경우 컴파일 타임에 의존성이 결정되기 때문에, 클래스가 폭발하는 문제가 있다.
+- 데코레이터 패턴은 상속을 사용할 경우에 발생하는 문제를 잘 해결해준다. 특히 OCP(open close principle) 원칙을 지키면서 확장성도 가져갈 수 있다.
+- 데코레이터 객체는 클라이언트의 입장에서 감싸는 객체와 같은 행동을 해야하기 때문에 객체가 구현하고 있는 인터페이스를 구현해야만 한다.
+- 너무 많은 수의 데코레이터 객체를 만들어야 하는 단점이 있다.
