@@ -36,3 +36,5 @@ function createPizza(type: string) {
     throw new Error("Unknown pizza type");
   }
 }
+
+export {};
