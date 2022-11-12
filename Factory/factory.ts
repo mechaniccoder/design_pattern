@@ -4,6 +4,19 @@ function orderPizza(type: string) {
   pizza.bake();
 }
 
+function orderPizza(type: string) {
+  let pizza = null;
+
+  if (type === "치즈") {
+    pizza = new CheesePizza();
+  } else if ("페퍼로니") {
+    pizze = new PepperoniPizza();
+  }
+
+  pizza.prepare();
+  pizza.bake();
+}
+
 interface Pizza {
   prepare(): void;
   bake(): void;

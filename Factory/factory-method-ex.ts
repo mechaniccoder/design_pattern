@@ -70,3 +70,22 @@ function client(pizzaType: string) {
 }
 
 export {};
+
+class CheesePizza {
+  constructor(private PizzaIngredientFactory: PizzaIngredientFactory) {}
+
+  createPizza() {
+    const dough = this.PizzaIngredientFactory.createDough();
+    const sauce = this.PizzaIngredientFactory.createSauce();
+    // ...
+  }
+}
+class PepperoniPizza {
+  constructor(private PizzaIngredientFactory: PizzaIngredientFactory) {}
+
+  createPizza() {
+    const dough = this.PizzaIngredientFactory.createDough();
+    const sauce = this.PizzaIngredientFactory.createSauce();
+    // ...
+  }
+}
