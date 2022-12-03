@@ -1,5 +1,6 @@
 /**
  * Command pattern을 활용해 receiver의 implementation을 숨길 수 있다는 것이 장점인 것 같다.
+ * Strategy pattern 과 비교했을때 invoker, receiver, command 세 객체간의 협력이 있다는 점에서 차이가 있는 것 같다.
  */
 
 /**
