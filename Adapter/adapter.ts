@@ -1,3 +1,7 @@
+/**
+ * Adapter pattern은 클라이언트가 사용하는 인터페이스로 변환해주는 역할을 한다.
+ */
+
 interface Duck {
   quack();
   fly();
