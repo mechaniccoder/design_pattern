@@ -43,3 +43,13 @@
 - 실제로 싱글턴을 직접 구현해서 사용할 일은 많지는 않을 것이다.
 - 프런트엔드 상태관리 라이브러리 들을 생각해보면(Redux, Recoil) 내부적으로 싱글턴을 사용하고 있을 것이라 생각한다. 뿐만 아니라 React Query에서 cahce, Context API도 있다.
   상당히 여러 곳에서 사용되는 것을 봤을때 쉽게 접근할 수 있는 설계 방법인 것 같다. 하지만 앞서 언급했던 바와 같이 의존성이 매우 크기 때문에 조심해서 다뤄야할 필요가 있다.
+
+# Iterator
+
+- array 혹은 linked list 처럼 반복되는 구조에서 구현을 클라이언트에 노출시키지 않고 동일한 인터페이스를 사용할 수 있게끔 하는 패턴이다. Javascript에서는 [symbol.iterator] 활용을
+  예로 들 수 있을 것 같다. Map, Set, Array, generator가 이를 사용하는 예시이다.
+
+# Composite
+
+- single object와 group of object를 동일하게 취급하는 패턴이다. 아마 폴더 구조같은 것들에 사용할 수 있을 것 같다. 여기서는 single object나 group object를 동일하게 인식하는
+  추상화가 중요하다고 생각한다.
